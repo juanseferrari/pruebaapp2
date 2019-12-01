@@ -47,6 +47,7 @@
 
   </head>
   <body>
+    <script src="script.js"></script>
       <nav class="navbar navbar-expand-lg navbar-dark ">
             <a class="navbar-brand" href="#"><img src="bcp logo.png" width="80" height="40"></a>
             <a class="navbar-brand" href="#">OLSHI</a>
@@ -297,9 +298,6 @@
 
 
 
-
-
-
    <script> //al hacer click se anima la barra
         function animar(){
              document.getElementById("barra").classList.toggle("final")
@@ -349,8 +347,34 @@
         }
 
     </script> -->
+   
+    <div class="container text-center py-5"> 
+         <button id="btnjson" class="btn btn-primary">GetJSON</button>
+        <div class="row" id="cardDiv"></div>
+    </div>
+    <script>
+    var btn= document.getElementById('btnjson').addEventListener('click',getPost);
+    var con=0
+    var div= document.getElementById('cardDiv');
 
-  
+    </script>
+    
+    <div class="container text-center py-5"> 
+            <button id="btnstores" class="btn btn-primary">GetStores</button>
+            <div class="row" id="cardDiv2"></div>
+
+     </div>
+    <script>
+    var btn2= document.getElementById('btnstores').addEventListener('click',stores);
+    var con=0
+    var div2= document.getElementById('cardDiv2');
+
+    
+    </script>
+
+
+
+
     <!-- <script>alert("hola soy un mensaje externo")</script>    -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
